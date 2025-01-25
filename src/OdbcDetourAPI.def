@@ -1,0 +1,71 @@
+LIBRARY   OdbcDetour
+EXPORTS
+    ConfigDriverW
+    ConfigDSN
+    ConfigDSNW
+    SQLAllocConnect
+    SQLAllocEnv
+    SQLAllocHandle
+    SQLAllocStmt
+    SQLBindCol
+    SQLBindParameter
+    SQLBrowseConnectW               ; not implemented by Access
+    SQLBulkOperations
+    SQLCancel
+    SQLCancelHandle                 ; not implemented by Access
+    SQLCloseCursor
+    SQLColAttributeW
+    SQLColumnPrivilegesW            ; not implemented by Access
+    SQLColumnsW
+    SQLCompleteAsync                ; not implemented by Access
+    SQLConnectW
+    SQLCopyDesc
+    SQLDescribeColW
+    SQLDescribeParam                ; not implemented by Access
+    SQLDisconnect
+    SQLDriverConnectW
+    SQLEndTran
+    SQLExecDirectW
+    SQLExecute
+    SQLExtendedFetch
+    SQLFetch
+    SQLFetchScroll
+    SQLFreeConnect
+    SQLFreeEnv
+    SQLFreeHandle
+    SQLFreeStmt
+    SQLGetConnectAttrW
+    SQLGetCursorNameW
+    SQLGetData
+    SQLGetDescFieldW
+    SQLGetDescRecW
+    SQLGetDiagFieldW
+    SQLGetDiagRecW
+    SQLGetEnvAttr                   ; not implemented by Access
+    SQLGetFunctions
+    SQLGetInfoW
+    SQLGetStmtAttrW
+    SQLGetTypeInfoW
+    SQLMoreResults
+    SQLNativeSqlW
+    SQLNumParams
+    SQLNumResultCols
+    SQLParamData
+    SQLPrepareW
+    SQLPrimaryKeysW                 ; not implemented by Access
+    SQLProcedureColumnsW
+    SQLProceduresW
+    SQLPutData
+    SQLRowCount
+    SQLSetConnectAttrW
+    SQLSetCursorNameW
+    SQLSetDescFieldW
+    SQLSetDescRec
+    SQLSetEnvAttr
+    SQLSetPos
+    SQLSetScrollOptions             ;deprecated ! In ODBC 3.x, the ODBC 2.0 function SQLSetScrollOptions has been replaced by calls to SQLGetInfo and SQLSetStmtAttr
+    SQLSetStmtAttrW
+    SQLSpecialColumnsW
+    SQLStatisticsW
+    SQLTablePrivilegesW             ; not implemented by Access
+    SQLTablesW

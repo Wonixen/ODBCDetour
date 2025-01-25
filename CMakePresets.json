@@ -1,0 +1,55 @@
+{
+    "version": 8,
+    "configurePresets": [
+        {
+            "name": "generic",
+            "hidden": true,
+            "generator": "Visual Studio 17 2022",
+            "toolset": "host=ARM64",
+            "binaryDir": "${sourceDir}/build/${presetName}",
+            "environment": {},
+            "cacheVariables": {
+                "CMAKE_INSTALL_PREFIX": "${sourceParentDir}/build/${presetName}/install",
+                "CMAKE_TOOLCHAIN_FILE": "C:/Users/wonix/devtools/vcpkg/scripts/buildsystems/vcpkg.cmake",
+                "CMAKE_C_COMPILER": "cl.exe",
+                "CMAKE_CXX_COMPILER": "cl.exe"
+            }
+        },
+        {
+            "name": "x64",
+            "displayName": "Windows x64",
+            "description": "Using compilers for Visual Studio 17 2022 (x64 architecture)",
+            "architecture": "x64",
+            "inherits": [
+                "generic"
+            ],
+            "cacheVariables": {}
+        }
+    ],
+    "buildPresets": [
+        {
+            "name": "debug",
+            "displayName": "debug",
+            "configurePreset": "x64",
+            "configuration": "Debug"
+        },
+        {
+            "name": "Release",
+            "displayName": "Release",
+            "configurePreset": "x64",
+            "configuration": "Release"
+        },
+        {
+            "name": "RelWithDebInfo",
+            "displayName": "RelDeb",
+            "configurePreset": "x64",
+            "configuration": "RelWithDebInfo"
+        },
+        {
+            "name": "MinSizeRel",
+            "displayName": "MinSizeRel",
+            "configurePreset": "x64",
+            "configuration": "MinSizeRel"
+        }
+    ]
+}
